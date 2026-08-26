@@ -48,13 +48,13 @@ body {
         /* ANIMAÇÃO DOS CUBOS FLUTUANTES NO FUNDO    */
         /* ========================================= */
         .cubos {
-            position: absolute;
+            position: fixed;
             top: 0;
             left: 0;
-            width: 100%;
-            height: 100%;
+            width: 100vw;
+            height: 100vh;
             overflow: hidden;
-            z-index: 1; /* Fica atrás do conteúdo principal */
+            z-index: -1; /* Fica atrás do conteúdo principal */
             margin: 0;
             padding: 0;
         }
@@ -65,9 +65,11 @@ body {
             list-style: none;
             width: 20px;
             height: 20px;
-            background: rgba(116, 198, 157, 0.3); /* Verde Claro com Transparência */
+            background: rgba(132, 238, 185, 0.3); /* Verde Claro com Transparência */
             animation: subir 25s linear infinite;
             bottom: -150px; /* Começam fora da tela por baixo */
+            border-radius: 10%; /* Deixa os cubos com cantos arredondados */
+            border: 1px solid  rgba(82, 183, 136, 0.616);; /* Borda verde clara */
         }
 
         /* Configurando tamanhos, posições e velocidades diferentes para cada cubo */
