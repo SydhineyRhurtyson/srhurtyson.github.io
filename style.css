@@ -170,16 +170,7 @@ a:focus-visible, button:focus-visible {
 
 .hero-ctas { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 30px; }
 
-.hero-social { display: flex; gap: 22px; flex-wrap: wrap; }
-
-.hero-social a {
-  font-family: var(--font-mono);
-  font-size: 13px;
-  color: var(--ink-dim);
-  border-bottom: 1px solid transparent;
-  transition: color 0.2s, border-color 0.2s;
-}
-.hero-social a:hover { color: var(--amber-strong); border-color: var(--amber-strong); }
+.hero-social { display: flex; gap: 14px; flex-wrap: wrap; }
 
 /* signature element: small grid that "sweeps" like a search algorithm */
 .hero-grafico { justify-self: center; text-align: center; }
